@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+--Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+--Darkgrayishblue: hsl(227, 10%, 46%);
+--Darkgray: hsl(0, 0%, 59%);
+
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    display:grid;
+    align-items:center;
+    place-content: center;
+    min-height:100vh;
+    font-size:18px;
+    background:var(--Darkcyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image:url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat:no-repeat, no-repeat;
+    background-position:right 45vw bottom 35vh ,left 50vw top 50vh;
+
+}
+.container{
+   width:20rem;
+   background-color:white;
+   height:22rem;
+   border-radius:1.2rem;
+   overflow:hidden;
+   display:grid;
+}
+.container .card-background{
+    width:100%;
+    height:8rem;
+}
+.container .card-background img{
+    width:100%;
+    height:100%;
+}
+.container .victor{
+     display:grid;
+     margin-top:-4rem;
+     justify-content: center;
+     width:100%;
+     height:7rem;
+
+}
+.container .victor img{
+     border-radius:5rem;
+     border:.3rem solid white;
+}
+.container .content{
+    display:grid;
+    align-items:center;
+    width:100%;
+    height:11rem;  
+    margin-top:-1rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+.content .name{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:6rem;
+}
+.content .name h3{
+    font-size:1em;
+}
+.content .name span{
+    font-size:1em;
+    color:var(--Darkgrayishblue);
+    font-weight:lighter;
+}
+.content .name p{
+    margin:auto;
+    margin-top:0;
+    font-size:.79em;
+    color:var(--Darkgray);
+}
+.border{
+    margin-top:-3rem;
+    width:100%;
+    height:1em;
+    border-bottom:.03rem solid  hsl(0, 0%, 59%);
+    
+}
+.interactions{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:1rem;
+    
+}
+.followers , .likes , .photos{
+    display:grid;
+    align-items:center;
+}
+.interactions h4{
+    font-size:.9em;
+}
+.interactions p{
+    color:var(--Darkgrayishblue);
+    font-size:.7em;
+    
+}
+
+
